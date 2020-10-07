@@ -71,7 +71,7 @@ module.exports = {
           msg: "文章id有误,请检查"
         })
       }
-      console.log(articleId)
+      // console.log(articleId)
       // 查询评论
       const commentRes = await Comment.findAll({
         where: {
@@ -263,9 +263,9 @@ module.exports = {
         // 评论数
         v.comments = v.comments.length
         v.content = html_decode(v.content);
-        console.log(v.content);
+        // console.log(v.content);
         const index = v.content.indexOf("</p>");
-        console.log(index);
+        // console.log(index);
         // 简略信息
         if(index==-1){
           v.intro = v.content.substring(0,20)+'...'

@@ -102,7 +102,7 @@ module.exports = {
         where: { id }
       })
       // res.send(result)
-      console.log(result)
+      // console.log(result)
       // res.send('/delsuc')
       if(result==1){
         res.send({

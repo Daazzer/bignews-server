@@ -41,7 +41,7 @@ module.exports = {
       const { title, date } = req.body;
       let { content } = req.body;
       content = html_encode(content);
-      console.log(content);
+      // console.log(content);
       // 获取封面
       const { filename: cover } = req.file;
 
